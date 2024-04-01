@@ -1,5 +1,5 @@
 {
-  "name": "pz04atm-machine",
+  "name": "pz04_cli_atm_machine",
   "version": "1.0.2",
   "description": "This is simple atm_machine",
   "main": "main.js",

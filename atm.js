@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 //Account details:
 let myBalance = 15000; //Dollar
@@ -9,7 +10,7 @@ const pin = await inquirer.prompt([
     {
         name: "pin",
         type: "number",
-        message: "Enter Your Pin Code"
+        message: "Enter Your Pin Code",
     },
 ]);
 //condition for Pin Code:
@@ -64,10 +65,10 @@ if (pin.pin === myPin) {
     if (tranzaction.tranzaction === "fastcash") {
         let withdraw = await inquirer.prompt([
             {
-                name: 'withdraw',
-                type: 'list',
-                message: 'Select the Amount',
-                choices: ['1000', '1500', '2000', '2500', '3000', '3500', '4000']
+                name: "withdraw",
+                type: "list",
+                message: "Select the Amount",
+                choices: ["1000", "1500", "2000", "2500", "3000", "3500", "4000"],
             },
         ]);
         if (withdraw.withdraw <= myBalance) {

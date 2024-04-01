@@ -2,9 +2,9 @@
   "name": "pz04atm-machine",
   "version": "1.0.2",
   "description": "This is simple atm_machine",
-  "main": "index.js",
+  "main": "atm.js",
   "type": "module",
-  "bin": "index.js",
+  "bin": "atm.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
